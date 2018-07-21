@@ -1,28 +1,39 @@
 .App {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Form {
+}
+
+.Form input {
   text-align: center;
+  padding: 10px 30px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.List {
+
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.Task {
+  padding: 10px 30px;
+  margin: 15px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  transition: 250ms;
 }
 
-.App-title {
-  font-size: 1.5em;
+.Task:hover {
+  cursor: pointer;
+  background-color: rgb(226, 177, 179);
 }
 
-.App-intro {
-  font-size: large;
+.Task span {
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Task button {
+  margin-left: 5px;
 }
