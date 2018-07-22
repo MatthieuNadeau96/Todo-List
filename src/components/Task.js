@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class Task extends Component {
 
   render() {
@@ -7,7 +8,9 @@ class Task extends Component {
       <div
         onClick={() => this.props.handleDelete(this.props.index)}
         className="Task">
-        <span>{this.props.todo.value}</span>
+        <span>
+          {this.props.todo.value}
+        </span>
       </div>
     );
   }

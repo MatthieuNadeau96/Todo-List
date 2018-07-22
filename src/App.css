@@ -4,6 +4,11 @@
   flex-direction: column;
 }
 
+.Form {
+  display: grid;
+  justify-content: center;
+}
+
 
 .Form input {
   text-align: center;

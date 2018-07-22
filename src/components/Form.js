@@ -9,6 +9,7 @@ class Form extends Component {
           <input
             onChange={(e) => this.props.handleChange(e)}
             value={this.props.inputValue}
+            placeholder="Enter your task"
           />
         </form>
       </div>
