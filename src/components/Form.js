@@ -5,7 +5,7 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <form className="Form" onSubmit={(evt) => this.props.handleSubmit(evt)}>
+        <form onSubmit={(evt) => this.props.handleSubmit(evt)} className="Form">
           <input
             onChange={(e) => this.props.handleChange(e)}
             value={this.props.inputValue}

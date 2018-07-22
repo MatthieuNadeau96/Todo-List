@@ -29,7 +29,7 @@ class App extends Component {
 
     const todos = this.state.todos
     todos.push(newTodo);
-    this.setState({ inputValue: '', todos}); // TODO: having trouble getting this to update the inputValue to an empty string once the user submits his/her task.
+    this.setState({ inputValue: '', todos});
   }
 
   handleDelete = (index) => {
@@ -43,9 +43,9 @@ class App extends Component {
     return (
       <div className="App">
         <Form
-          handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
-          value={this.state.inputValue}
+          inputValue={this.state.inputValue}
+          handleSubmit={this.handleSubmit}
         />
         <List
           handleDelete={this.handleDelete}
