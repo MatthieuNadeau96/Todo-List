@@ -8,20 +8,20 @@ class App extends Component {
 
   state = {
     inputValue: '',
-    todos: [
-      {value: 'Do this', done: false},
-      {value: 'Do that', done: true}
-    ]
+    todos: []
   }
 
   handleChange = (e) => {
-    this.setState({
-      inputValue: e.target.value
-    })
+    this.setState({ inputValue: e.target.value });
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
+  handleSubmit = (evt) => {
+    evt.preventDefault();
+    const inputValue = this.state.inputValue;
+    if (inputValue === '' || inputValue === ' ') {
+      return
+    }
+
     const newTodo = {
       value: this.state.inputValue,
       done: false
@@ -29,23 +29,18 @@ class App extends Component {
 
     const todos = this.state.todos
     todos.push(newTodo);
-
-    this.setState({ todos, inputValue: '' })
-
-  }
-
-  handleClick = (index) => {
-    const todos = this.state.todos;
-    todos[index].done = !todos[index].done;
-    this.setState({ todos, inputValue: '' })
+    this.setState({ inputValue: '', todos});
+    // console.log('inputValue: ' + inputValue)
   }
 
   handleDelete = (index) => {
     const todos = this.state.todos
     todos.splice(index, 1)
+
+    this.setState({ todos });
   }
 
-  //// TODO: Button is being pressed but it's inside the handleClick div element 
+  //// TODO: Button is being pressed but it's inside the handleClick div element
 
   render() {
     return (
@@ -56,7 +51,6 @@ class App extends Component {
           value={this.state.inputValue}
         />
         <List
-          handleClick={this.handleClick}
           handleDelete={this.handleDelete}
           todos={this.state.todos}
         />

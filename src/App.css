@@ -4,17 +4,12 @@
   flex-direction: column;
 }
 
-.Form {
-}
 
 .Form input {
   text-align: center;
   padding: 10px 30px;
 }
 
-.List {
-
-}
 
 .Task {
   padding: 10px 30px;

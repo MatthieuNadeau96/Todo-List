@@ -13,7 +13,6 @@ class List extends Component {
               key={index}
               todo={todo}
               index={index}
-              handleClick={this.props.handleClick}
               handleDelete={this.props.handleDelete}
             />
           )
