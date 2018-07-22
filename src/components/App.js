@@ -29,8 +29,7 @@ class App extends Component {
 
     const todos = this.state.todos
     todos.push(newTodo);
-    this.setState({ inputValue: '', todos});
-    // console.log('inputValue: ' + inputValue)
+    this.setState({ inputValue: '', todos}); // TODO: having trouble getting this to update the inputValue to an empty string once the user submits his/her task.
   }
 
   handleDelete = (index) => {
@@ -39,8 +38,6 @@ class App extends Component {
 
     this.setState({ todos });
   }
-
-  //// TODO: Button is being pressed but it's inside the handleClick div element
 
   render() {
     return (
