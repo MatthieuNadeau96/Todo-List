@@ -8,7 +8,7 @@ class List extends Component {
   render() {
     return (
       <div className="List">
-        <FlipMove typeName={null} duration={180} easing="ease-out">
+        <FlipMove typeName={null} duration={150} easing="ease-out">
           {this.props.todos.map((todo, index) => {
             return (
               <Task

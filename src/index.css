@@ -2,8 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: skyblue;
+  background: linear-gradient(to bottom, #50ceb9, #50cec9);
   height: 100vh;
+  font-family: 'Hind', sans-serif;
 }
 
 #root {

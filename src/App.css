@@ -2,6 +2,7 @@
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  font-size: 1.2em;
 }
 
 .Form {
@@ -13,22 +14,29 @@
 .Form input {
   text-align: center;
   padding: 10px 30px;
+  font-size: 1.2em;
+  border: 2px solid skyblue;
+  font-family: 'Hind', sans-serif;
+  font-weight: lighter;
 }
 
 
 .Task {
   padding: 10px 30px;
   margin: 15px 0;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, .7);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   transition: 250ms;
+  color: black;
+  border: 2px solid skyblue;
 }
 
 .Task:hover {
   cursor: pointer;
-  background-color: rgb(226, 177, 179);
+  background-color: rgba(234, 119, 119, 0.8);
+  border: 2px solid rgb(234, 119, 119);
 }
 
 .Task span {
