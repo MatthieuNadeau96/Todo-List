@@ -29,14 +29,15 @@
   display: flex;
   justify-content: center;
   transition: 250ms;
-  color: black;
-  border: 2px solid skyblue;
+  color: #444;
+  border: 2px solid rgba(255, 255, 255, .5);
 }
 
 .Task:hover {
   cursor: pointer;
-  background-color: rgba(234, 119, 119, 0.8);
-  border: 2px solid rgb(234, 119, 119);
+  background-color: rgba(234, 119, 119, 1);
+  border: 2px solid rgb(255, 96, 96);
+  color: #111;
 }
 
 .Task span {
