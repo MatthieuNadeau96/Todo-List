@@ -32,6 +32,8 @@ class App extends Component {
     this.setState({ inputValue: '', todos});
   }
 
+  // TODO: fix the order in which the items get deleted
+
   handleDelete = (index) => {
     const todos = this.state.todos
     todos.splice(index, 1)
